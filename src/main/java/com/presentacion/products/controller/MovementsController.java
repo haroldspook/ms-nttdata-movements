@@ -28,12 +28,12 @@ public class MovementsController {
      */
     @GetMapping
     @ResponseBody
-    public ResponseEntity<List<Movements>>getCustomer(){
+    public ResponseEntity<List<Movements>> getMovements(){
         return new ResponseEntity<>(customerService.findAll(), HttpStatus.OK);
     }
 
     /**
-     * Metodo que eliminará todos los Product (Product)
+     * Metodo que eliminará todos los Movements (Movements)
      */
     @DeleteMapping
     @ResponseBody
@@ -43,14 +43,14 @@ public class MovementsController {
     }
 
     /**
-     * Método que registrará los Products
+     * Método que registrará los Movements
      * @param produts
-     * @return El mismo Product para ver su inserción
+     * @return El mismo Movements para ver su inserción
      */
     @PostMapping
     @ResponseBody
-    public ResponseEntity<Movements>saveCustomer(@RequestBody Movements produts){
-        return new ResponseEntity<Movements>(customerService.save(produts), HttpStatus.OK);
+    public ResponseEntity<Movements>saveCustomer(@RequestBody Movements movements){
+        return new ResponseEntity<Movements>(customerService.save(movements), HttpStatus.OK);
 
     }
 

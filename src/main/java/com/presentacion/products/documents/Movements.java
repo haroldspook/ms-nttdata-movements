@@ -2,8 +2,6 @@ package com.presentacion.products.documents;
 
 
 import com.fasterxml.jackson.annotation.JsonProperty;
-import com.presentacion.products.model.Active;
-import com.presentacion.products.model.Pasive;
 import lombok.Data;
 import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.mapping.Document;
@@ -15,15 +13,15 @@ import java.util.Date;
  * Modelo de la clase que representa a la colección de mongo DB
  */
 @Data
-@Document(collection = "AccountBank")
+@Document(collection = "Movements")
 public class Movements {
 
     @Id
     @JsonProperty("id")
     private String id;
     private Integer numberDocument;
-    private Active active;
-    private Pasive pasive;
+    private String typeMovements;
+    private String amount;
 
     @DateTimeFormat(pattern = "yyyy-MM-dd")
     private Date createAt;
