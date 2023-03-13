@@ -13,7 +13,7 @@ import java.util.List;
  * Clase que representa al controllador
  */
 @RestController
-@RequestMapping(path = "api/v1/products")
+@RequestMapping(path = "api/v1/movements")
 public class MovementsController {
 
     /**
@@ -44,7 +44,7 @@ public class MovementsController {
 
     /**
      * Método que registrará los Movements
-     * @param produts
+     * @param Movements
      * @return El mismo Movements para ver su inserción
      */
     @PostMapping
