@@ -1,7 +1,8 @@
-package com.presentacion.products.documents;
+package com.presentacion.products.model.entity;
 
 
 import com.fasterxml.jackson.annotation.JsonProperty;
+import lombok.Builder;
 import lombok.Data;
 import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.mapping.Document;
@@ -14,11 +15,12 @@ import java.util.Date;
  */
 @Data
 @Document(collection = "Movements")
+@Builder
 public class Movements {
 
     @Id
     @JsonProperty("id")
-    private String id;
+    private Long id;
     private Integer numberDocument;
     private String typeMovements;
     private String amount;
