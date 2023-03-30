@@ -1,0 +1,16 @@
+[
+  {
+    "id": 1,
+    "numberDocument": 77777777,
+    "typeMovements": "Deposito",
+    "amount": 100,
+    "createAt": "2023-03-29T06:01:40.516Z"
+  },
+  {
+    "id": 2,
+    "numberDocument": 77777776,
+    "typeMovements": "Deposito",
+    "amount": 100,
+    "createAt": "2023-03-29T06:01:40.516Z"
+  }
+]

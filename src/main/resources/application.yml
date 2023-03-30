@@ -1,0 +1,11 @@
+
+server:
+  port: 8081
+
+spring:
+  application:
+    name: MicroserviceMovements
+  data:
+    mongodb:
+      uri: mongodb://haroldferrm:rojoverano@ac-bk2dwnm-shard-00-00.b7tbt46.mongodb.net:27017,ac-bk2dwnm-shard-00-01.b7tbt46.mongodb.net:27017,ac-bk2dwnm-shard-00-02.b7tbt46.mongodb.net:27017/?ssl=true&replicaSet=atlas-iar90x-shard-0&authSource=admin&retryWrites=true&w=majority
+      database: ReactivoDB
